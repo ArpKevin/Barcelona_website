@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barcelona Sights</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         nav ul {
             list-style-type: none;
@@ -61,13 +62,24 @@
     </header>
 
     <main id="content" class="main-area">
-        <div class="cards">
+        <!-- <div class="cards">
             <div class="card" ng-repeat="sight in sights">
                 <h3>{{ sight.title }}</h3>
-                <img ng-src="sources/img/{{sight.img}}.jpg" alt="{{ sight.title }}">
+                <img src="sources/img/{{sight.img}}.jpg" alt="{{ sight.title }}">
                 <p>{{ sight.description }}</p>
             </div>
+        </div> -->
+        <div class="cards">
+            <figure class="card" ng-repeat="sight in sights">
+                <img src="sources/img/{{sight.img}}.jpg" alt="{{ sight.title }}">
+                <figcaption class="caption">
+                    <h3>{{ sight.title }}</h3>
+                    <p>{{ sight.description }}</p>
+                </figcaption>
+            </figure>
         </div>
+            
+
     </main>
 
     <footer></footer>
