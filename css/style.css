@@ -1,6 +1,16 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns */
+    gap: 10px;
+    padding: 10px; /* Add padding to the container */
+    max-width: 1400px;
+    height:2000px;
+    margin: 0 auto; /* Center the container */
 }
 
 .card {
@@ -11,8 +21,8 @@
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ensure the image takes up the entire width of its container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px 5px 0 0;
 }
 
@@ -32,4 +42,13 @@
 
 .card:hover .caption {
     opacity: 1;
+}
+
+.img-desc {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.img-title {
+    text-align: center;
 }
