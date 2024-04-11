@@ -52,3 +52,29 @@
 .img-title {
     text-align: center;
 }
+
+nav li a:hover{
+    text-decoration: none;
+}
+
+/* Footer */
+#footer {
+    background: #007b5e !important;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+#footer ul.social li{
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+  font-size:1.5rem;
+  transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
