@@ -24,7 +24,7 @@
 
 .card img {
     width: 100%; /* Ensure the image takes up the entire width of its container */
-    height: auto; /* Maintain aspect ratio */
+    height: 2000px; /* Maintain aspect ratio */
     border-radius: 5px 5px 0 0;
 }
 
@@ -35,7 +35,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 10px;
+    padding: 0.5em;
     margin: 0;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -46,13 +46,12 @@
     opacity: 1;
 }
 
-.card:hover {
+.card {
     width: 100%;
 }
 
 .img-desc {
     text-align: justify;
-    margin-top: 20px;
 }
 
 .img-title {
@@ -77,10 +76,28 @@ nav li a:hover{
   padding: 3px 0;
 }
 #footer ul.social li a i {
-  font-size:1.5rem;
+  font-size:24px;
   transition: .5s all ease;
 }
 #footer ul.social li:hover a i {
   font-size:30px;
   margin-top:-10px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Media query for tablet screens */
+  .cards {
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two items per row */
+    gap: 10px;
+    padding: 10px; /* Add padding to the container */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Media query for phone screens */
+  .cards {
+    grid-template-columns: repeat(1, minmax(300px, 1fr)); /* One item per row */
+    gap: 10px;
+    padding: 10px; /* Add padding to the container */
+  }
 }
