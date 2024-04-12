@@ -65,23 +65,35 @@ nav li a:hover{
 /* Footer */
 #footer {
     background: #007b5e !important;
+    padding: 1rem 0 0.25rem 0;
 }
-
+  
 #footer a {
     color: #ffffff;
     text-decoration: none !important;
     background-color: transparent;
 }
-#footer ul.social li{
-  padding: 3px 0;
+
+.social-icons {
+    display: flex;
+    justify-content: center;
 }
-#footer ul.social li a i {
-  font-size:24px;
-  transition: .5s all ease;
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: all 0.5s ease;
 }
-#footer ul.social li:hover a i {
-  font-size:30px;
-  margin-top:-10px;
+
+.social-icons a:hover {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {
